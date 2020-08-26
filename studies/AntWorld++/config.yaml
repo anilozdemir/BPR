@@ -1,0 +1,35 @@
+hyperparameters: 
+    nTemporal    : 1
+    nReservoir   : 1000
+    alpha        : 0.81
+    rho          : 0.998
+    gamma        : 0.005 # fixed
+    phi          : 0.50  # fixed
+    sparsity     : 0.90
+    percentile   : 0.95
+    randomSeed   : 18
+    hiddenSize   : 64
+
+experimentParameters:
+    learningRate : 0.001
+    learningRateT: 10
+    nEpoch       : 200
+    nCheck       : 50
+    nOperation   : 50
+    optimizer    : Adam
+
+modelParameters:    
+    readoutType  : 'nRes'
+    thetaLearning: True
+    FNA          : False
+    nInput       : 2048
+    nOutput      : 1000
+    thetaInitAll : False  # Blending all three datasets for theta init
+    
+experimentDetails:
+    dataset      : 'VPR-1000' # Not Used
+    problem      : 'VPR'
+    labelFreq    : 100
+    tolerance    : 21
+    model        : 'ESN_NA' 
+    nImages      : 1000
