@@ -1,0 +1,4 @@
+pyRC
+gym
+pytorch-lightning
+jupyterlab
