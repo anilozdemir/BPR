@@ -13,23 +13,23 @@ hyperparameters:
 experimentParameters:
     learningRate : 0.001
     learningRateT: 10
-    nEpoch       : 200
-    nCheck       : 50
-    nOperation   : 50
+    nEpoch       : 20
+    nCheck       : 5
+    nOperation   : None
     optimizer    : Adam
 
 modelParameters:    
     readoutType  : 'nRes'
-    thetaLearning: True
+    thetaLearning: False
     FNA          : False
-    nInput       : 2048
-    nOutput      : 1000
+    nInput       : 360
+    nOutput      : 2
     thetaInitAll : False  # Blending all three datasets for theta init
     
 experimentDetails:
-    dataset      : 'VPR-1000' # Not Used
-    problem      : 'VPR'
-    labelFreq    : 100
-    tolerance    : 21
+    dataset      : 'AntWorld++02'
+    problem      : 'BPR'
     model        : 'ESN_NA' 
+    labelFreq    : 100
     nImages      : 1000
+    tolerance    : 1
