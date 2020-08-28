@@ -23,7 +23,7 @@ modelParameters:
     thetaLearning: False
     FNA          : False
     nInput       : 360
-    nOutput      : 2
+    nOutput      : 1000
     thetaInitAll : False  # Blending all three datasets for theta init
     
 experimentDetails:
